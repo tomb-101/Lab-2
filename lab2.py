@@ -3,7 +3,6 @@ def addtoarray(num):
     for i in range(1,int(num)+1):
         userarray.append(i)
     return userarray
-
 userstring=""
 print("Enter a number")
 usernum=int(input())
