@@ -1,14 +1,14 @@
-#Exercise
-'''
-a = 11
-a+=5
-atype=type(a)
-print(f"a = {a} and the data type is {atype}")
+def addtoarray(num):
+    userarray=[]
+    for i in range(1,int(num)+1):
+        userarray.append(i)
+    return userarray
 
-a=11
-b=5
-result = a<b
-type_result=type(result)
-print(f"result= {result} and its data type is {type_result}")
-'''
-
+userstring=""
+print("Enter a number")
+usernum=int(input())
+for i in addtoarray(usernum):
+    for n in range(0, i):
+        userstring=userstring+str(i)
+    print(userstring)
+    userstring=""
